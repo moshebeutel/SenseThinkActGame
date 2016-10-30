@@ -1,0 +1,5 @@
+c:\users\user.lap-user\documents\visual studio 2013\Projects\SenseThinkActGame\SenseThinkActGame\bin\Debug\SenseThinkActGame.dll
+c:\users\user.lap-user\documents\visual studio 2013\Projects\SenseThinkActGame\SenseThinkActGame\bin\Debug\SenseThinkActGame.pdb
+c:\users\user.lap-user\documents\visual studio 2013\Projects\SenseThinkActGame\SenseThinkActGame\obj\Debug\SenseThinkActGame.dll
+c:\users\user.lap-user\documents\visual studio 2013\Projects\SenseThinkActGame\SenseThinkActGame\obj\Debug\SenseThinkActGame.pdb
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActGame\obj\Debug\SenseThinkActGame.csprojResolveAssemblyReference.cache

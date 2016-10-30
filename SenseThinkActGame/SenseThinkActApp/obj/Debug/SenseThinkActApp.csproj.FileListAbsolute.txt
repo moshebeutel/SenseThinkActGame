@@ -1,0 +1,17 @@
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.csprojResolveAssemblyReference.cache
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\MainWindow.g.cs
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\App.g.cs
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp_MarkupCompile.cache
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp_MarkupCompile.lref
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\bin\Debug\SenseThinkActApp.exe.config
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\bin\Debug\SenseThinkActApp.exe
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\bin\Debug\SenseThinkActApp.pdb
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\bin\Debug\SenseThinkActGame.dll
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\bin\Debug\SenseThinkActGame.pdb
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\MainWindow.baml
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.g.resources
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.Properties.Resources.resources
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.csproj.GenerateResource.Cache
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.exe
+C:\Users\user.LAP-USER\Documents\Visual Studio 2013\Projects\SenseThinkActGame\SenseThinkActApp\obj\Debug\SenseThinkActApp.pdb

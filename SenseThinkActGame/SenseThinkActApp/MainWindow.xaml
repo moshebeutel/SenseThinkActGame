@@ -1,0 +1,63 @@
+﻿<Window x:Class="SenseThinkActApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SenseThinkActApp"
+        Title="MainWindow" Height="800" Width="800">
+    <Window.InputBindings>
+        <KeyBinding Key="Right" Command="{Binding RightCommand}"/>
+        <KeyBinding Key="Left"  Command="{Binding LeftCommand}"/>
+        <KeyBinding Key="Up"    Command="{Binding FwdCommand}"/>
+        <KeyBinding Key="Down"  Command="{Binding BckdCommand}"/>
+        <MouseBinding Gesture="MiddleClick" Command="{Binding ShootCommand}" />
+    </Window.InputBindings>
+    <Window.Resources>
+        
+        <local:EntityTemplateSelector x:Key="EntityTemplateSelector" />
+        <DataTemplate x:Key="uninvolvedTemplate" DataType="local:EntityViewModel">
+            <Ellipse Height="20" Width="5" Fill="Pink" Opacity="{Binding State}" >
+                <!--<Ellipse.RenderTransform>
+                    <RotateTransform Angle="{Binding Heading}" />
+                </Ellipse.RenderTransform>-->
+            </Ellipse>
+        </DataTemplate>
+        <DataTemplate x:Key="botTemplate" DataType="local:EntityViewModel">
+            <Ellipse Height="20" Width="10" >
+                <Ellipse.Fill>
+                    <SolidColorBrush Opacity="{Binding State}" Color="Blue"/>
+                </Ellipse.Fill>
+                <!--<Ellipse.RenderTransform>
+                    <RotateTransform Angle="{Binding Heading}" />
+                </Ellipse.RenderTransform>-->
+            </Ellipse>
+        </DataTemplate>
+        <DataTemplate x:Key="manualTemplate" DataType="local:EntityViewModel">
+            <Ellipse Height="20" Width="10" Fill="Red" Opacity="{Binding State}">
+                <!--<Ellipse.RenderTransform>
+                    <RotateTransform Angle="{Binding Heading}" />
+                </Ellipse.RenderTransform>-->
+            </Ellipse>
+        </DataTemplate>
+        <DataTemplate x:Key="refugeTemplate" DataType="local:EntityViewModel">
+            <Rectangle Height="10" Width="10" Fill="Black" Opacity="{Binding State}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="targetTemplate" DataType="local:EntityViewModel">
+            <Rectangle Height="20" Width="20" Stroke="Blue" StrokeThickness="5" Fill="Red" Opacity="1"/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ItemsControl ItemsSource="{Binding Entities}" Background="Gray" ItemTemplateSelector="{StaticResource EntityTemplateSelector}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemContainerStyle>
+                <Style >
+                    <Setter Property="Canvas.Top" Value="{Binding X}" />
+                    <Setter Property="Canvas.Left" Value="{Binding Y}" />
+                </Style>
+            </ItemsControl.ItemContainerStyle>
+        </ItemsControl>
+
+    </Grid>
+</Window>

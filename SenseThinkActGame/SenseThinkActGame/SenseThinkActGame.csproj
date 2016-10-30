@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7A321F7-85AE-47D1-A69C-6BB54C2C247D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SenseThinkActGame</RootNamespace>
+    <AssemblyName>SenseThinkActGame</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionPlanner.cs" />
+    <Compile Include="Actuator.cs" />
+    <Compile Include="ActuatorModel.cs" />
+    <Compile Include="DummyPlayer.cs" />
+    <Compile Include="EntityState.cs" />
+    <Compile Include="HighLevelDecisionMakers\HighLevelDecisionMaker.cs" />
+    <Compile Include="IPlayerFactory.cs" />
+    <Compile Include="PlayerFactory.cs" />
+    <Compile Include="Refuge.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="GameClock.cs" />
+    <Compile Include="HighLevelDecisionMakers\SimpleHighLevelDecisionMaker.cs" />
+    <Compile Include="IAction.cs" />
+    <Compile Include="IActionPlanner.cs" />
+    <Compile Include="IActuator.cs" />
+    <Compile Include="IHighLevelDecisionMaker.cs" />
+    <Compile Include="ISensor.cs" />
+    <Compile Include="ISensorModel.cs" />
+    <Compile Include="IWorld.cs" />
+    <Compile Include="IWorldActionApplier.cs" />
+    <Compile Include="Actions\Motion.cs" />
+    <Compile Include="Actuators\MotionActuator.cs" />
+    <Compile Include="ActuatorModels\MotionActuatorModel.cs" />
+    <Compile Include="Planners\MotionPlanners\RandomMotionPlanner.cs" />
+    <Compile Include="WorldActionAppliers\MotionWorldActionApplier.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="SensorModel.cs" />
+    <Compile Include="Planners\ShootingPlanners\ShootEnemyPlanner.cs" />
+    <Compile Include="Actions\Shooting.cs" />
+    <Compile Include="Actuators\ShootingActuator.cs" />
+    <Compile Include="ActuatorModels\ShootingActuatorModel.cs" />
+    <Compile Include="WorldActionAppliers\ShootingWorldActionApplier.cs" />
+    <Compile Include="Planners\MotionPlanners\SimpleMotionPlanner.cs" />
+    <Compile Include="Planners\ShootingPlanners\SimpleShootingPlanner.cs" />
+    <Compile Include="Planners\MotionPlanners\TargetedMotionPlanner.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="WorldActionApplier.cs" />
+    <Compile Include="WorldState.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
